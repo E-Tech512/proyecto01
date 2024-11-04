@@ -1,0 +1,107 @@
+<nav class="sidebar">
+    <header>
+        <div class="image-text">
+            <span class="image">
+                <img src="../../../../assets/images/logo.png" alt="logo">
+            </span>
+
+            <div class="text header-text">
+                <span class="name">StorageHub</span>
+                <span class="profession">Aloe Developer</span>
+            </div>
+        </div>
+
+        <i class='bx bx-chevron-right toggle'>
+        </i>
+    </header>
+
+    <div class="menu-bar">
+        <div class="menu">
+            <li class="search-box">
+                <i class="bx bx-search icon"></i>
+                    <input type="search" placeholder="Search...">
+            </li>
+            <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="contenido/categoria">
+                        <i class="bx bxs-dashboard icon" ></i>
+                        <span class="text nav-text">Categorias</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="contenido/producto">
+                        <i class="bx bxs-shopping-bag-alt icon" ></i>
+                        <span class="text nav-text">Productos</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bxs-package icon" ></i>
+                        <span class="text nav-text">Proveedor</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bxs-purchase-tag icon" ></i>
+                        <span class="text nav-text">Clientes</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bxs-contact icon" ></i>
+                        <span class="text nav-text">Entradas</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bxs-dollar-circle icon" ></i>
+                        <span class="text nav-text">Salidas</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bxs-report icon" ></i>
+                        <span class="text nav-text">Reportes</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bxs-brightness icon"></i>
+                        <span class="text nav-text">Configuración</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bxs-user-account icon"></i>
+                        <span class="text nav-text">Administrar accesos</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-content">
+            <li class="">
+                <a href="#">
+                    <i class="bx bx-log-out icon"></i>
+                    <span class="text nav-text">Cerrar sesión</span>
+                </a>
+            </li>
+            <li class="mode">
+                <div class="moon-sun">
+                    <i class="bx bx-moon icon moon"></i>
+                    <i class="bx bx-sun icon sun"></i>
+                </div>
+                <span class="mode-text text">Dark Mode</span>
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+        </div>
+    </div>
+</nav>
+
+<section class="home">
+    <div class="text">
+        <router-outlet/>
+    </div>
+</section>

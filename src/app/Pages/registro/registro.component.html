@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="form-section" >
+        <img src="../../../assets/images/logo.png" alt="Alegra Punto de Venta" class="logo">
+        <h2>¡Crea tu cuenta gratis!</h2>
+        <p>Optimiza tu negocio con TrackWare <br> de Venta: gestión fácil y rápida</p>
+
+        <form (ngSubmit) = "onSubmit()">
+            <input type="text" placeholder="Nombre" required id="nombre" [(ngModel)]="usuario.nombre" name="nombre">
+            <input type="email" placeholder="Correo" required id="email" [(ngModel)]="usuario.correo" name="correo">
+            <input type="password" placeholder="Contraseña (min. 8 caracteres)" required minlength="8" id="password" [(ngModel)]="usuario.password" name="password">
+            <select required [(ngModel)]="usuario.pais" name="pais" required="">
+                <option value="Perú" selected>Perú</option>
+                <option value="Colombia">Colombia</option>
+                <option value="México">México</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+            <button type="submit">CREAR CUENTA</button>
+        </form>
+        <a href="#" class="promo-link">¿Tienes un código promocional?</a>
+    </div>
+
+    <div class="testimonial-section">
+        <img src="../../../assets/images/fondo3.jpg" alt="Testimonio de usuarios" class="testimonial-image">
+        <blockquote>
+            “Con TrackWare, simplificamos la gestión de nuestros productos y ventas. Nos permite supervisar en tiempo real, sin complicaciones.”
+            <footer>Carlos Martínez - LaTiendaVerde.com</footer>
+        </blockquote>
+    </div>
+</div>
